@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
+echo "TEST APTFILE"
+
 if [ -f $1/Aptfile ]; then
-  echo "Apt" && exit 0
+  echo "Apt" && exit 1
 else
   echo "no" && exit 1
 fi
